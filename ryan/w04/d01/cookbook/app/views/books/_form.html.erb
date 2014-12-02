@@ -1,5 +1,5 @@
 
-	<% unless @book.errors.empty? %>
+	<% if @book.errors %>
 	<ul id="errors">
 	<% @book.errors.full_messages.each do |error| %>
 		<li>Error: <%= error %></li>

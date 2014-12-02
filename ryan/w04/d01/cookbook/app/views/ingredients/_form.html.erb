@@ -1,5 +1,5 @@
 
-<% unless @ingredient.errors.empty? %>
+<% @ingredient.errors %>
 	<ul id="errors">
 	<% @ingredient.errors.full_messages.each do |error| %>
 		<li>Error: <%= error %></li>
