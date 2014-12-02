@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cookbook</title>
+  <style rel="stylesheet" type="text/css" href="normalize.css"></style>
+  <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<header>
+<span class="nav">
+<h1>Cukbukr</h1>
+<%= render 'shared/nav' %>
+</span>
+</header>
+
+<main>
+<%= yield %>
+</main>
+
+<footer>
+<h4>Cuking Fud is Fun!</h4>
+</footer>
+</body>
+</html>

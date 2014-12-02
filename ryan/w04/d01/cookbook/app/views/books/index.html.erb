@@ -1,0 +1,9 @@
+<h1>Books index</h1>
+
+<% @books.each do |book| %>
+	<h3><%= link_to book.title, book %></h3>
+	<p><%= book.chef %></p>
+
+<% end %>
+
+<%= link_to 'New Book', new_book_path %>

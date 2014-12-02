@@ -1,0 +1,12 @@
+<%= image_tag @book.image %>
+
+<h2><%= @book.title %></h2>
+<p>by <%= @book.chef %></p>
+<ul>
+<div id="add_recipe">
+
+</div>
+</ul>
+<%= link_to 'Edit', edit_book_path(@book) %>
+<%= link_to "Delete", book_path(@book),
+	method: :delete, data: { confirm: 'Are you sure?' } %>

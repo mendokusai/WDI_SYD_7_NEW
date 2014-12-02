@@ -1,0 +1,22 @@
+<%= image_tag @recipe.image %>
+
+<h2><%= @recipe.name %></h2>
+<h3>From the Cookbook:  <%= @recipe.book.title %></h3>
+<ul>
+<li>Course: <%= @recipe.course %></li>
+<li>Servings: <%= @recipe.serving_size %></li>
+</ul>
+<h3>Directions</h3>
+<p><%= @recipe.instructions %></p>
+
+<div>
+<h4>Ingredients: </h4>
+<% @recipe.ingredients.each do |ingredient| %>
+	<li><%= ingredient.name %></li>
+<% end %>
+</div>
+<br>
+<%= link_to 'Back', recipes_path %>
+<%= link_to 'Edit', edit_recipe_path(@recipe) %>
+<%= link_to 'Delete', recipe_path(@recipe),
+method: :delete, data: { confirm: 'Are you sure?' } %>

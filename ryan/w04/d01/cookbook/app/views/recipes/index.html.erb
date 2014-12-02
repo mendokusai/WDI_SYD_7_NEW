@@ -1,0 +1,13 @@
+<h1>Recipes Index</h1>
+
+<% @recipes.each do |recipe| %>
+
+<h3><%= link_to recipe.name, recipe %></h3>
+	<ul>
+		<li>Type of Dish: <%= recipe.course %></li>
+		<li>Servings: <%= recipe.serving_size %></li>
+	</ul>
+
+<% end %>
+
+<%= link_to 'New Recipe', new_recipe_path %>
