@@ -48,6 +48,6 @@ class BooksController < ApplicationController
 						  										:cuisine, 
 						  										:chef,
 						  										:image,
-                                  {recipe_ids:[]})
+                                  {recipe_ids:[]} )
   	end
 end

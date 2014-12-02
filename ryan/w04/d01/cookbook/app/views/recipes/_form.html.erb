@@ -1,4 +1,11 @@
-<ul>
+<% unless @recipe.errors.empty? %>
+	<ul id="errors">
+	<% @recipe.errors.full_messages.each do |error| %>
+		<li>Error: <%= error %></li>
+		<% end %>
+	</ul>
+	<% end %>
+
 <%= form_for @recipe do |f| %>
 	
 	<div class="form-group">
@@ -38,8 +45,5 @@
 	<div class="form-group">
 	<%= f.submit %>
 	</div>
-	
-	
 
 <% end %>
-</ul>

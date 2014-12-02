@@ -51,8 +51,15 @@ main {
 	background-color: #FFFAFA;
 	margin-left: 10%;
 	margin-right: 10%;
+}
 
+#errors {
+  padding: 10px;
+  color: red;
+}
 
+.field_with_errors input {
+  border: 1px solid red;
 }
 
 main h2{

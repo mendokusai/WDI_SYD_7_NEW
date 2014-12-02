@@ -1,4 +1,13 @@
-<ul>
+
+	<% unless @book.errors.empty? %>
+	<ul id="errors">
+	<% @book.errors.full_messages.each do |error| %>
+		<li>Error: <%= error %></li>
+		<% end %>
+	</ul>
+	<% end %>
+
+
 <%= form_for @book do |f| %>
 	
 	<div class="form-group">
@@ -25,7 +34,4 @@
 	<%= f.submit %>
 	</div>
 	
-	
-
 <% end %>
-</ul>
