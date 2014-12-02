@@ -47,6 +47,7 @@ class BooksController < ApplicationController
   		params.require(:book).permit(:title, 
 						  										:cuisine, 
 						  										:chef,
-						  										:image)
+						  										:image,
+                                  {recipe_ids:[]})
   	end
 end

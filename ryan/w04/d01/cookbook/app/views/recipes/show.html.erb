@@ -12,7 +12,9 @@
 <div>
 <h4>Ingredients: </h4>
 <% @recipe.ingredients.each do |ingredient| %>
-	<li><%= ingredient.name %></li>
+	<li><%= link_to ingredient, @ingredient do %>
+	<%= ingredient.name %></li>
+	<% end %>
 <% end %>
 </div>
 <br>

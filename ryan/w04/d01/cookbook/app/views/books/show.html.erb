@@ -2,9 +2,15 @@
 
 <h2><%= @book.title %></h2>
 <p>by <%= @book.chef %></p>
-<ul>
-<div id="add_recipe">
 
+<div id="show_recipes">
+<h3>Recipes in the Collection:</h3>
+<ul>
+<% @book.recipes.each do |recipe| %>
+	<li><%= link_to recipe, @recipe do |x| %></li>
+	<%= recipe.name %>
+	<% end %>
+<% end %>
 </div>
 </ul>
 <%= link_to 'Edit', edit_book_path(@book) %>
