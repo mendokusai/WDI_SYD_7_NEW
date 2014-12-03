@@ -7,12 +7,28 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+	<body>
 
-	<p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+		<p class="notice"><%= notice %></p>
+	  <p class="alert"><%= alert %></p>
+	  <header>
+		  <div id="title">
+			  <h1>Tuna!!!</h1>
+		  </div>
+		  <div id="nav">
+				<%= render 'shared/nav' %>
+			</div>
+		</header>
 
-<%= yield %>
+<hr>
+<br>
+		<main>
+			<%= yield %>
+		</main>
+		
+		<footer>
+			<p>Remember Kids: corporations are people!</p>
+		</footer>
 
 </body>
 </html>

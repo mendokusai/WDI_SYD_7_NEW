@@ -1,2 +1,11 @@
-<h1>Mixtapes#index</h1>
-<p>Find me in app/views/mixtapes/index.html.erb</p>
+<h1>Mixtapes</h1>
+
+<ul>
+<% @mixtapes.each do |mix| %>
+	<%= link_to mix, @mixtape do |x| %>
+	<li><%= mix.name %></li>
+	<% end %>
+<% end %> 
+</ul>
+
+<%= link_to "New", new_mixtape_path %>
