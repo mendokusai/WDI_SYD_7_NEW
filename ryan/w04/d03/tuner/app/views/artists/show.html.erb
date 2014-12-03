@@ -6,6 +6,12 @@
 <h3>Biography</h3>
 	<p><%= @artist.bio %></p>
 
+<h4>Songs</h4>
+<ul>
+<% @artist.songs.each do |x| %>
+<li><%= x.name %></li>
+<% end %>
+</ul>
 
 
 <%= link_to "Back", artists_path %>

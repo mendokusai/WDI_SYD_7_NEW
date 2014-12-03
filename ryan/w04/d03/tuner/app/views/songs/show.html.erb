@@ -1,7 +1,9 @@
 <h2>Song</h2>
 
 <h3><%= @song.name %></h3>
-
+<% unless @song.artist.nil? %>
+<h4>By <%= @song.artist.name %> </h4>
+<% end %>
 <ul>
 <li>Year: <%= @song.year %></li>
 <li>Genre: <%= @song.genre %></li>

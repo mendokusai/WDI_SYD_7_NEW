@@ -29,6 +29,11 @@
 </div>
 
 <div class="form_group">
+<%= f.label :artist_id %>
+<%= f.collection_select :artist_id, Artist.all, :id, :name %>
+</div>
+
+<div class="form_group">
 <%= f.submit %>
 
 </div>

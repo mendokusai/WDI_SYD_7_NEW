@@ -15,7 +15,7 @@ class Mixtape < ActiveRecord::Base
 	validates :description, length: { minimum: 5 }
 
 	belongs_to :user_id
-	has_many :songs
-	has_many :artists
-	
+	has_many :mixtape_songs
+	has_many :songs, through: :mixtape_songs
+
 end

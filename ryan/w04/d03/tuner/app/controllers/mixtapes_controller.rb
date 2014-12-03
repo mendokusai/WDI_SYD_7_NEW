@@ -43,7 +43,9 @@ private
 	end
 
 	def mix_params
-		params.require(:mixtape).permit(:name, :description)
+		params.require(:mixtape).permit(:name, 
+																	:description,
+																	{song_ids:[]} )
 	end
 
 end

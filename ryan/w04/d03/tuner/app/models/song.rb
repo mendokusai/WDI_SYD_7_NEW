@@ -16,7 +16,9 @@ class Song < ActiveRecord::Base
 
 	validates_presence_of :name, :year
 
-	belongs_to :mixtape
+	has_many :mixtape_songs
+	has_many :mixtape, through: :mixtape_songs
 	belongs_to :artist
+
 
 end
