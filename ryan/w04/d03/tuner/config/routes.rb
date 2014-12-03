@@ -24,6 +24,14 @@
 
 Rails.application.routes.draw do
 
+  get 'users/index'
+
+  get 'mixtapes/index'
+
+  get 'songs/index'
+
+  get 'artists/index'
+
   devise_for :users
 
   root "welcome#index"
