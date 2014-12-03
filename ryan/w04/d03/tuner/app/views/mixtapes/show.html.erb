@@ -3,7 +3,10 @@
 <p><%= @mixtape.description %></p>
 
 <% @mixtape.songs.each do |song| %>
-<li><%= song.name %> by <strong><%= song.artist.name %></strong></li>
+<li><%= link_to song, @song do%>
+	<%= song.name %>
+	<% end %>
+ by <strong><%= song.artist.name %></strong></li>
 <% end %>
 
 <%= link_to "Back", mixtapes_path %>

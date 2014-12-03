@@ -8,8 +8,10 @@
 
 <h4>Songs</h4>
 <ul>
-<% @artist.songs.each do |x| %>
-<li><%= x.name %></li>
+<% @artist.songs.each do |song| %>
+<li><%= link_to song, @song do %></li>
+	<%= song.name %>
+	<% end %>
 <% end %>
 </ul>
 
