@@ -1,3 +1,14 @@
-<h1>Show Artists</h1>
+<h2><%= @artist.name %></h2>
+<ul>
+	<li>Hometown: <%= @artist.hometown %></li>
+	<li>Years: <%= @artist.years_active %></li>
+</ul>
+<h3>Biography</h3>
+	<p><%= @artist.bio %></p>
 
-<%= @artist.name %>
+
+
+<%= link_to "Back", artists_path %>
+<%= link_to "Edit", edit_artist_path(@artist) %>
+<%= link_to "Delete", artist_path(@artist),
+	method: :delete, data: { confirm: 'Are you sure?' } %>
