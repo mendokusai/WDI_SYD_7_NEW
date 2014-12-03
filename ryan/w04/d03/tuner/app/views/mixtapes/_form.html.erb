@@ -1,3 +1,11 @@
+<% if @mixtape.errors %>
+	<ul id="errors">
+	<% @mixtape.errors.full_messages.each do |error| %>
+		<li>Error: <%= error %></li>
+		<% end %>
+	</ul>
+	<% end %>
+
 <%= form_for @mixtape do |f| %>
 
 <div class="form_group">

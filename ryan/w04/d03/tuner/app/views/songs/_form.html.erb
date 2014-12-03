@@ -1,3 +1,11 @@
+<% if @song.errors %>
+	<ul id="errors">
+	<% @song.errors.full_messages.each do |error| %>
+		<li>Error: <%= error %></li>
+		<% end %>
+	</ul>
+	<% end %>
+
 <%= form_for @song do |f| %>
 
 <div class="form_group">

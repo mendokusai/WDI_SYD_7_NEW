@@ -12,4 +12,9 @@
 #
 
 class Artist < ActiveRecord::Base
+	validates_presence_of :name, :hometown
+	validates :bio, length: { minimum: 10 }
+
+	has_many :songs
+
 end

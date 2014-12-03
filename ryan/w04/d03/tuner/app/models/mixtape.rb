@@ -11,4 +11,11 @@
 #
 
 class Mixtape < ActiveRecord::Base
+	validates :name, presence: true
+	validates :description, length: { minimum: 5 }
+
+	belongs_to :user_id
+	has_many :songs
+	has_many :artists
+	
 end

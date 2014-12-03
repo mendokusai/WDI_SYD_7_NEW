@@ -22,3 +22,12 @@
 #nav li {
 	display: inline;
 }
+
+#errors {
+  padding: 10px;
+  color: red;
+}
+
+.field_with_errors input {
+  border: 1px solid red;
+}

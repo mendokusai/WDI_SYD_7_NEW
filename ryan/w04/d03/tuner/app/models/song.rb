@@ -13,4 +13,10 @@
 #
 
 class Song < ActiveRecord::Base
+
+	validates_presence_of :name, :year
+
+	belongs_to :mixtape
+	belongs_to :artist
+
 end
