@@ -10,16 +10,14 @@ joyDivision = Artist.create({
 	name: "Joy Division",
 	hometown: "Manchester",
 	bio: "Joy Division were an English rock band formed in 1976 in Salford, Greater Manchester. Originally named Warsaw, the band primarily consisted of Ian Curtis, Bernard Sumner, Peter Hook and Stephen Morris.",
-	years_active: "1976-1990",
-	label: "Factory"
+	years_active: "1976-1990"
 	})
 
 bruce = Artist.create({
 	name: "Bruce Springsteen",
 	hometown: "Philedelphia",
 	bio: "Bruce is from the streets and he's born in the USA...",
-	years_active: "1972 - 2010",
-	label: "Empire"
+	years_active: "1972 - 2010"
 	})
 
 love_will_tear_us_apart = Song.create({
