@@ -1,2 +1,12 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<h1>Welcome to Tuna!!!</h1>
+
+<img src="http://clipart.toonarific.com/data/media/148/Charlie_Tuna.gif">
+
+<h2>Current Chart-toppas</h2>
+<ul>
+<% @mixtapes.each do |mixtape| %>
+	<%= link_to mixtape, @mixtape do %>
+	<li><%= mixtape.name %></li>
+		<% end %>
+	<% end %>
+	</ul>

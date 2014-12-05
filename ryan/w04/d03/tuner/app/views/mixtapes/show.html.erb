@@ -10,6 +10,8 @@
 <% end %>
 
 <%= link_to "Back", mixtapes_path %>
+<% if user_signed_in? && current_user.admin? || current_user.mixtape_ids.include?(@mixtape.id) %>
 <%= link_to "Edit", edit_mixtape_path(@mixtape) %>
 <%= link_to "Delete", mixtape_path(@mixtape),
 	method: :delete, data: { confirm: 'Are you sure?' } %>
+	<% end %>

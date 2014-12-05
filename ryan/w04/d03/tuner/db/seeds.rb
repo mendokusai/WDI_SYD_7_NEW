@@ -56,3 +56,31 @@ mixtape1 = Mixtape.create({
 	name: "Mixtape 01",
 	description: "This is my first mixtape! SQUEEE!"
 	})
+
+User.destroy_all
+
+#admin
+
+ryan = User.create({
+  email: "ryanpauley@gmail.com",
+  password: "password",
+  password_confirmation: "password",
+  confirmed_at: Time.now,
+  admin: true
+})
+
+
+#normal
+ryan2 = User.create({
+  email: "info@ryanpauley.com",
+  password: "password",
+  password_confirmation: "password",
+  confirmed_at: Time.now
+})
+
+ryan2 = User.create({
+  email: "info@pauley.com",
+  password: "password",
+  password_confirmation: "password",
+  confirmed_at: Time.now
+})

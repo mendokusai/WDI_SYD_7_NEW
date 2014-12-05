@@ -12,15 +12,96 @@
  *
  *= require_tree .
  *= require_self
- */
+  */
+
+
+* {
+	color: #fcf8ae;
+
+}
+
+p .notice {
+	font-size: 30px;
+	font-color: #fc3c3c;
+}
+
+#user_links {
+	color: #FCF8AE;
+	font-size: 20px;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2em;
+}
+
+li {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2.3em;
+}
+
+h1 {
+	font-family: 'Fugaz One', cursive;
+	font-size: 3.5em;
+		color: #fcf8ae;
+}
+
+header {
+	margin-top: -40px;
+	background-image: url(banner.jpg);
+	background-image: no-repeat;
+	height: 15em;
+	color: white;
+	padding-top: 0px;
+	padding-left: 20px;
+}
+
+
+body {
+	background-color: #16649C;
+	background-image: url(http://pacon.com/wp-content/uploads/2012/12/56528_56525-Under-The-Sea1.jpg);
+	background-size: cover;
+
+}
+
+footer {
+	background-image: url(footer.jpg);
+	height: 100px;
+}
+
+main {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+main strong {
+	color: #091996;
+	font-size: 0.6em;
+}
+
+main li {
+	font-size: 24px;
+}
 
 #title {
 	padding-left: 50px;
-
 }
 
 #nav li {
 	display: inline;
+	font-family: 'Fugaz One', cursive;
+	color: #fcf8ae;
+	font-size: 1.8em;
+	padding-left: 20px;
+}
+
+a {
+	color: #f7d342;
+	font-size: 0.6em;
+
+}
+a:hover {
+	color: #39a3ef;
 }
 
 #errors {
@@ -31,3 +112,4 @@
 .field_with_errors input {
   border: 1px solid red;
 }
+

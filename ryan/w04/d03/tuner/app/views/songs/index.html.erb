@@ -7,6 +7,7 @@
 	<% end %>
 <% end %> 
 </ul>
-
+<% if user_signed_in? && current_user.admin? %>
 <%= link_to "New", new_song_path %>
 <%= link_to "Home", root_path %>
+<% end %>

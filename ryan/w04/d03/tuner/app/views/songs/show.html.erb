@@ -11,6 +11,8 @@
 </ul>
 
 <%= link_to "Back", songs_path %>
+<% if user_signed_in? && current_user.admin? %>
 <%= link_to "Edit", edit_song_path(@song) %>
 <%= link_to "Delete", song_path(@song),
 	method: :delete, data: { confirm: 'Are you sure?' } %>
+	<% end %>

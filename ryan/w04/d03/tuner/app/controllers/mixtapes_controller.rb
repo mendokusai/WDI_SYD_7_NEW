@@ -1,5 +1,6 @@
 class MixtapesController < ApplicationController
-  before_action :find_mixtape, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:index, :show]
+  before_action :find_mixtape, only: [:edit, :update, :destroy]
 
   def index
   	@mixtapes = Mixtape.all
@@ -10,13 +11,14 @@ class MixtapesController < ApplicationController
   end
 
   def show
+    @mixtape = Mixtape.find(params[:id])
   end
 
   def edit
   end
 
   def create
-  	@mixtape = Mixtape.new(mix_params)
+  	@mixtape = current_user.mixtapes.build(mix_params)
   	if @mixtape.save
   		redirect_to mixtape_path(@mixtape)
   	else
@@ -39,7 +41,11 @@ class MixtapesController < ApplicationController
 
 private
 	def find_mixtape
-		@mixtape = Mixtape.find(params[:id])
+		if current_user.admin?
+      @mixtape = Mixtape.find(params[:id])
+    else
+      @mixtape = current_user.mixtapes.find(params[:id])
+    end
 	end
 
 	def mix_params

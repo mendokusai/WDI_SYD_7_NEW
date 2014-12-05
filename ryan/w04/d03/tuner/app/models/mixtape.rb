@@ -14,7 +14,7 @@ class Mixtape < ActiveRecord::Base
 	validates :name, presence: true
 	validates :description, length: { minimum: 5 }
 
-	belongs_to :user_id
+	belongs_to :user
 	has_many :mixtape_songs
 	has_many :songs, through: :mixtape_songs
 

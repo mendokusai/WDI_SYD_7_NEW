@@ -1,4 +1,6 @@
 <h1>Artists</h1>
+
+
 <ul>
 <% @artists.each do |artist| %>
 	<%= link_to artist, @artist do |x| %>
@@ -6,6 +8,8 @@
 	<% end %>
 <% end %> 
 </ul>
-
+<% if user_signed_in? && current_user.admin? %>
 <%= link_to "New", new_artist_path %>
 <%= link_to "Home", root_path %>
+
+<% end %>
