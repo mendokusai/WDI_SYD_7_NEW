@@ -1,0 +1,38 @@
+user logged in?
+	no = login
+	else...
+
+
+
+[button] where am i? (gets location from ip/wifi) = 
+		enters details with street data, 
+				populates into form, user can fine tune if necessary
+				specify distance range (100m, 500m, 1km, 2km, 5km, 10+km)
+					enter => geocode location, geocode distance to bars (in range)
+
+
+show history of recent locations. (user has many locations)
+location 1-5 | button(use this location) > populates where I am field 
+
+
+
+location has
+	user_id
+	address
+	city
+	state
+	zipcode
+	country
+	latitude
+	longitude
+	range_search
+
+	unless result = request.location?
+		form street address 
+		form city
+		form state
+		form zipcode
+		form country
+		form range (how far do you want to look?)
+	else
+		geocoder.address

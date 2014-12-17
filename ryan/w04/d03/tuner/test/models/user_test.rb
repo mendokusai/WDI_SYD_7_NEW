@@ -19,6 +19,7 @@
 #  unconfirmed_email      :string(255)
 #  created_at             :datetime
 #  updated_at             :datetime
+#  admin                  :boolean
 #
 
 require 'test_helper'

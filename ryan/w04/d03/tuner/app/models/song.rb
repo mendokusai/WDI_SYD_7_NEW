@@ -2,14 +2,16 @@
 #
 # Table name: songs
 #
-#  id         :integer          not null, primary key
-#  name       :string(255)
-#  year       :string(255)
-#  genre      :string(255)
-#  length     :string(255)
-#  artist_id  :integer
-#  created_at :datetime
-#  updated_at :datetime
+#  id            :integer          not null, primary key
+#  name          :string(255)
+#  year          :string(255)
+#  genre         :string(255)
+#  length        :string(255)
+#  artist_id     :integer
+#  created_at    :datetime
+#  updated_at    :datetime
+#  url           :string(255)
+#  soundcloud_id :integer
 #
 
 class Song < ActiveRecord::Base
