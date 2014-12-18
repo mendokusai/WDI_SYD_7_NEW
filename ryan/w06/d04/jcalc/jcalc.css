@@ -6,8 +6,12 @@
 
 #body {
 	width: 500px;
-	height: 600px;
+	height: 660px;
 	background: #ff00ff;
+}
+
+#body h1 {
+	color: #ff00ff;
 }
 
 #display {

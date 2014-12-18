@@ -29,6 +29,16 @@ function button(num){
 		}
 	}
 
+function operation(op){
+		if (second == false){
+			number1 = parseInt(total1);
+			second = true;
+			operator = op;
+			$('#display').empty();
+			$('#display').append("<h1>" + total1 + "+" + "</h1>");
+		}
+	}
+
 $(function(){
 	//$('#display').append("<h1>"+total+"</h1>");
 	$('#clear').on('click', function(){
@@ -84,42 +94,19 @@ $(function(){
 
 	
 	$('#add').on('click', function(){
-		if (second == false){
-			number1 = parseInt(total1);
-			second = true;
-			operator = "add"
-			$('#display').empty();
-			$('#display').append("<h1>" + total1 + "+" + "</h1>");
-		}
+		operation("add");
 	});
+
 	$('#subtract').on('click', function(){
-		if (second == false){
-			number1 = parseInt(total1);
-			second = true;
-			operator = "subtract"
-			$('#display').empty();
-			$('#display').append("<h1>" + total1 + "-" + "</h1>");
-		}
+		operation("subtract");
 	});
 
 $('#multiply').on('click', function(){
-		if (second == false){
-			number1 = parseInt(total1);
-			second = true;
-			operator = "multiply"
-			$('#display').empty();
-			$('#display').append("<h1>" + total1 + "*" + "</h1>");
-		}
+		operation("multiply");
 	});
 
 $('#divide').on('click', function(){
-		if (second == false){
-			number1 = parseInt(total1);
-			second = true;
-			operator = "divide"
-			$('#display').empty();
-			$('#display').append("<h1>" + total1 + "/" + "</h1>");
-		}
+		operation("divide");
 	});
 
 	$('#enter').on('click', function(){
