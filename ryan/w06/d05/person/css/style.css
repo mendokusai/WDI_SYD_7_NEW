@@ -1,0 +1,85 @@
+@keyframes stolen_mango {
+	0% {
+		color: white;
+	}
+	30% {
+		color: red;
+	}
+	100% {
+		color: blue;
+	}
+	
+}
+#title h1{
+	animation: stolen_mango 0.5s infinite;
+}
+body {
+	background: #6B8CFF;
+	font-family: 'Press Start 2P', sans-serif;
+}
+
+h1 {
+	padding-top: 50px;
+	color: #ffed5d;
+	font-size: 60px;
+}
+
+h2 {
+	color: #FF3A00;
+	font-size: 60px;
+}
+
+main {
+	padding: 20px 50px 20px 50px;
+
+}
+
+header {
+	background: #604f2f;
+	height: 150px;
+}
+
+nav {
+	background: #FF3A00;
+	height: 120px;
+}
+
+nav li {
+	padding-top: 20px;
+	display: inline-block;
+	font-size: 30px;
+}
+
+nav a {
+	color: #f7ea4b;
+	padding-left: 30px;
+}
+
+#left_main{
+	padding-left: 50px;
+	padding-right: 50px;
+	background: #ebeafc;
+	float: left;
+	width: 65%;
+	border-right: 1px solid #ccc;
+}
+
+#left_main img {
+	padding-top: 20px;
+}
+
+#right_main{
+	padding-top: 20px;
+	padding-left: 20px;
+	background: #FF3A00;
+	height: 1280px;
+	float: left;
+	width: 20%;
+}
+
+#right_main li {
+	padding-top: 30px;
+	decoration: none;
+
+
+}
