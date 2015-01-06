@@ -1,0 +1,25 @@
+w06_d06_notes
+
+#node
+
+node websockets
+	
+	node is about aysncronous
+		callback functionality...
+
+		if a 5sec (long) process... 
+
+		vs
+
+		async model
+
+		rails how many requests can you make
+
+		js how many can you handle at once
+
+		[express](expressjs.com)
+
+
+		figure out how to update npm
+
+		

@@ -1,0 +1,31 @@
+#block1 {
+	width: 200px;
+	height: 200px;
+	background: url(http://fillmurray.com/300/200);
+	float: left;
+	padding: 0.5em;
+}
+
+#block2 {
+	width: 200px;
+	height: 200px;
+	background: url(http://fillmurray.com/200/400);
+	float: left;
+	padding: 0.5em;
+}
+
+#block3 {
+	width: 200px;
+	height: 200px;
+	background: url(http://fillmurray.com/220/200);
+	float: left;
+	padding: 0.5em;
+}
+
+#block4 {
+	width: 200px;
+	height: 200px;
+	background: url(http://fillmurray.com/180/200);
+	float: left;
+	padding: 0.5em;
+}
