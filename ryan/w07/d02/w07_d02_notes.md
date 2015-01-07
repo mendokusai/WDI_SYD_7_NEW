@@ -123,4 +123,40 @@ there are ruby gems for css preprocessing....
 
 #afternoon
 
-working on 
+working on jquery from morning example.
+
+
+#json review
+
+{
+    "glossary": {
+        "title": "example glossary",
+		"GlossDiv": {
+            "title": "S",
+			"GlossList": {
+                "GlossEntry": {
+                    "ID": "SGML",
+					"SortAs": "SGML",
+					"GlossTerm": "Standard Generalized Markup Language",
+					"Acronym": "SGML",
+					"Abbrev": "ISO 8879:1986",
+					"GlossDef": {
+                        "para": "A meta-markup language, used to create markup languages such as DocBook.",
+						"GlossSeeAlso": ["GML", "XML"]
+                    },
+					"GlossSee": "markup"
+                }
+            }
+        }
+    }
+}
+
+$.getJSON('http://headers.jsontest.com', function(result){
+	$('<p>' + result.Host + '</p>').appendTo($('#todo-list'));
+});
+
+
+#Homework
+
+memory game
+

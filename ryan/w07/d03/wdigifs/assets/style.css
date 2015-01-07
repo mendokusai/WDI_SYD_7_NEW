@@ -1,0 +1,87 @@
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:39% 0%}
+    50%{background-position:62% 100%}
+    100%{background-position:39% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:39% 0%}
+    50%{background-position:62% 100%}
+    100%{background-position:39% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:39% 0%}
+    50%{background-position:62% 100%}
+    100%{background-position:39% 0%}
+}
+
+@-webkit-keyframes crazyBackground {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes crazyBackground {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes crazyBackground { 
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+* {
+	box-sizing; border-box;
+}
+
+body {
+	background: linear-gradient(0deg, #ff0000, #e3ff00, #18ff00, #00ffeb, #0005ff, #dc00ff, #ff0000);
+background-size: 1400% 1400%;
+  min-height: 100vh;
+  -webkit-animation: AnimationName 0.4s ease infinite;
+  -moz-animation: AnimationName 0.4s ease infinite;
+  animation: AnimationName 0.4s ease infinite;
+	color: cyan;
+	font-family: 'Press Start 2P', cursive;
+}
+
+a {
+	color: black;
+	font-size: 1em;
+	padding: 1.6em;
+	display: inline-block;
+	cursor: pointer;
+	
+}
+
+.gif {
+	padding: 20px;
+	position: center;
+}
+
+#container {
+	background: linear-gradient(270deg, #00ffbd, #fd00ff);
+  background-size: 400% 400%;
+  min-height: 100vh;
+  -webkit-animation: crazyBackground 8s ease infinite;
+  -moz-animation: crazyBackground 8s ease infinite;
+  animation: crazyBackground 8s ease infinite;
+	width: 80%;
+	padding: 20px;
+	overflow: hidden;
+	margin: 20px auto;
+}
+
+.tag {
+	color: magenta;
+	font-style: 0.3em;
+	border: 10px solid black;
+	margin: 10px;
+	float: left;
+	width: 25%;
+	padding: 20px;
+	background: cyan;
+	border-radius: 10px;
+	box-shadow: 15px 15px lightslategray;
+}
